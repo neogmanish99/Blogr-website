@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Overpass", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #f4f4f4;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+header {
+    position: relative;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 143, 112, 1) 20%,
+        rgba(255, 61, 84, 1) 55%
+    );
+    height: 500px;
+    border-bottom-left-radius: 60px;
+    /* to hide the overflowing parts of the image */
+    overflow: hidden;
+}
+
+/* footer--utility */
+.spacing {
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+.header__img {
+    position: absolute;
+    background: url("/images/bg-pattern-intro-desktop.svg") no-repeat center
+        center/cover;
+    height: 200%;
+    width: 200%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 500px;
+    z-index: 1;
+}
+
+.container {
+    /* relative for overlapping and working of the z-index */
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    /* background-color: aliceblue; */
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__left > h2 {
+    font-size: 30px;
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.nav__list > li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 20px;
+}
+.nav__list > li > a {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: none;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #fff;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: hsl(353, 100%, 62%);
+    font-weight: 600;
+    border-radius: 18px;
+    font-size: 14px;
+}
+
+.btn-light {
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border: 1px snow solid;
+    border-radius: 18px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.header__section {
+    height: 200px;
+    margin-top: 120px;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.header__btns {
+    margin-top: 30px;
+}
+/* Design--future section */
+main {
+    height: 1000px;
+    overflow: hidden;
+}
+
+main > h2 {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 32%;
+    font-size: 50px;
+    font-weight: 500;
+    color: hsl(208, 49%, 24%);
+}
+.design__section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    margin-bottom: 100px;
+}
+.design__left {
+    position: absolute;
+    left: 15%;
+    width: 30%;
+}
+.design__left > h3 {
+    color: hsl(208, 49%, 24%);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.design__left > p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: hsl(0, 0%, 56%);
+}
+.design__right {
+    position: absolute;
+    background: url("/images/illustration-editor-desktop.svg") no-repeat center
+        center/cover;
+    height: 900px;
+    width: 900px;
+    right: -20%;
+}
+
+/* Art Infrastructure section */
+.art__section {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(90deg, hsl(237, 24%, 16%), hsl(237, 23%, 32%));
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+}
+
+.imageCircle {
+    z-index: 1;
+
+    top: -130%;
+    left: -15%;
+    width: 70%;
+}
+.imagePhone {
+    top: 195%;
+    left: 6%;
+    z-index: 5;
+}
+
+.art__right {
+    position: absolute;
+    width: 33%;
+    line-height: 1.5;
+    color: #f4f4f4;
+    right: 10%;
+}
+.art__right > h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/*Last section */
+.end__section {
+    position: relative;
+    /* background-color: yellow; */
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end__image {
+    position: absolute;
+    background: url("/images/illustration-laptop-desktop.svg") no-repeat center
+        center/cover;
+    height: 700px;
+    width: 700px;
+    left: -11%;
+}
+.end__info {
+    position: absolute;
+    width: 36%;
+    right: 10%;
+}
+
+.end__info > h3 {
+    color: hsl(208, 49%, 24%);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.end__info > p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: hsl(0, 0%, 56%);
+}
+
+/* Footer--section */
+/* footer {
+    height: 400px;
+    background-color: hsl(240, 10%, 16%);
+    color: hsl(240, 2%, 79%);
+    display: flex;
+    padding: 50px;
+} */
+footer {
+    height: 350px;
+    background-color: hsl(240, 10%, 16%);
+    padding: 60px 120px;
+    color: hsl(240, 2%, 79%);
+    display: flex;
+    border-top-right-radius: 60px;
+}
+
+.footer__option {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.blogr > h2 {
+    font-size: 40px;
+}
+
+.footer__list {
+    list-style: none;
+    line-height: 1.9;
+}
+.footer__list > li > a {
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+}
