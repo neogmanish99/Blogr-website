@@ -197,9 +197,9 @@ main > h2 {
     width: 70%;
 }
 .imagePhone {
-    top: 195%;
-    left: 6%;
-    z-index: 5;
+    z-index: 2;
+    left: 5%;
+    top: -15%;
 }
 
 .art__right {
