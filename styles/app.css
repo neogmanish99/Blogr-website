@@ -182,7 +182,15 @@ main > h2 {
     border-bottom-left-radius: 70px;
     display: flex;
     align-items: center;
+
+    /* overflow: hidden; */
+}
+.art__wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
+    z-index: 1;
 }
 
 .image {
@@ -190,14 +198,13 @@ main > h2 {
 }
 
 .imageCircle {
-    z-index: 1;
-
+    z-index: 2;
     top: -130%;
     left: -15%;
     width: 70%;
 }
 .imagePhone {
-    z-index: 2;
+    z-index: 10;
     left: 5%;
     top: -15%;
 }
